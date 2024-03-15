@@ -30,20 +30,19 @@ Starting inside a VM built with Vagrant and populated by Git, install Python/Dan
    * Inside a VM with shared directories, it is helpful to make sure your env is NOT inside of the shared directory, as permission issues can occur
 * Once your virtualenv is active, install the required libraries:
    * `pip install -r /usr/local/apps/djreact/django-todo-react/backend/requirements.txt`
-   * `python /usr/local/apps/djareact/django-todo-react/backend/manage.py migrate`
-   * `python /usr/local/apps/djareact/django-todo-react/backend/manage.py runserver 0:8000`
+   * `python /usr/local/apps/djreact/django-todo-react/backend/manage.py migrate`
+   * `python /usr/local/apps/djreact/django-todo-react/backend/manage.py runserver 0:8000`
    * Leave this terminal open and running: do the rest in a new terminal
      * Be sure to use `vagrant ssh` again to ensure you're running on your VM rather than your host
     
 #### Node and React
-* There may be some missing pieces here: npm install react? How do we get npx and do we need to run it for node to recognize how to build this app?
 * Follow [this tutorial from DigitalOcean to set up Node.js](https://www.digitalocean.com/community/tutorials/how-to-install-node-js-on-ubuntu-22-04#option-3-installing-node-using-the-node-version-manager) using the 'NVM' approach:
   * run `curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash`
   * `source ~/.bashrc`
   * `nvm install lts/iron`
 * `npm install bootstrap reactstrap axios`
 * `cd /usr/local/apps/djreact/django-todo-react/frontend`
-* `npm build`
+* `npm run build`
 
 #### NGINX
 * `sudo apt install nginx`
