@@ -24,7 +24,7 @@ Starting inside a VM built with Vagrant and populated by Git, install Python/Dan
 
 ### Install Software
 #### Python and Django
-* Follow (this tutorial from DigitalOcean to set up Python 3)[https://www.digitalocean.com/community/tutorials/how-to-install-python-3-and-set-up-a-programming-environment-on-an-ubuntu-22-04-server]
+* Follow [this tutorial from DigitalOcean to set up Python 3](https://www.digitalocean.com/community/tutorials/how-to-install-python-3-and-set-up-a-programming-environment-on-an-ubuntu-22-04-server)
    * Stop after step 2
    * For the current code, there may be assumptions that the virtual environment lives at `/usr/local/apps/env` (not `environments` or `my_env`). It's probable that this isn't important
    * Inside a VM with shared directories, it is helpful to make sure your env is NOT inside of the shared directory, as permission issues can occur
@@ -37,7 +37,7 @@ Starting inside a VM built with Vagrant and populated by Git, install Python/Dan
     
 #### Node and React
 * There may be some missing pieces here: npm install react? How do we get npx and do we need to run it for node to recognize how to build this app?
-* Follow (this tutorial from DigitalOcean to set up Node.js)[https://www.digitalocean.com/community/tutorials/how-to-install-node-js-on-ubuntu-22-04#option-3-installing-node-using-the-node-version-manager] using the 'NVM' approach:
+* Follow [this tutorial from DigitalOcean to set up Node.js](https://www.digitalocean.com/community/tutorials/how-to-install-node-js-on-ubuntu-22-04#option-3-installing-node-using-the-node-version-manager) using the 'NVM' approach:
   * run `curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash`
   * `source ~/.bashrc`
   * `nvm install lts/iron`
